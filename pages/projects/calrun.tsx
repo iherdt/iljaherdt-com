@@ -67,20 +67,28 @@ export default function CalRunPage() {
 
       <div className="max-w-4xl mx-auto px-6"><hr className="border-gray-100" /></div>
 
-      {/* Screenshots placeholder */}
+      {/* Screenshots */}
       <section className="max-w-4xl mx-auto px-6 py-12">
         <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Screenshots</h2>
         <div className="flex gap-4 overflow-x-auto pb-4 -mx-6 px-6 snap-x snap-mandatory">
-          {['Train List', 'Live Map', 'Trip Detail', 'Reminders', 'Stats'].map((label) => (
-            <div
-              key={label}
-              className="shrink-0 w-[200px] h-[433px] rounded-2xl bg-gradient-to-b from-gray-100 to-gray-50 border border-gray-100 flex items-center justify-center snap-start"
-            >
-              <span className="text-sm text-gray-300 font-medium">{label}</span>
+          {[
+            { src: '/screenshots/calrun/01-train-list.png', label: 'Train List' },
+            { src: '/screenshots/calrun/02-train-list-filtered.png', label: 'Filtered Routes' },
+            { src: '/screenshots/calrun/03-map-overview.png', label: 'Map Overview' },
+            { src: '/screenshots/calrun/04-map-live.png', label: 'Live Map' },
+            { src: '/screenshots/calrun/05-stats.png', label: 'Stats' },
+            { src: '/screenshots/calrun/06-settings.png', label: 'Settings' },
+          ].map((s) => (
+            <div key={s.label} className="shrink-0 w-[200px] snap-start">
+              <img
+                src={s.src}
+                alt={s.label}
+                className="w-full rounded-2xl border border-gray-100 shadow-sm"
+              />
+              <p className="text-xs text-gray-400 text-center mt-2">{s.label}</p>
             </div>
           ))}
         </div>
-        <p className="text-xs text-gray-400 mt-2">Screenshots coming soon.</p>
       </section>
 
       <div className="max-w-4xl mx-auto px-6"><hr className="border-gray-100" /></div>
