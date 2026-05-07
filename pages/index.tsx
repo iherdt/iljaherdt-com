@@ -13,12 +13,7 @@ export default function HomePage({ recentPosts }: HomeProps) {
     <Layout>
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 pt-20 pb-16">
-        <div className="flex flex-col sm:flex-row items-start gap-8">
-          <img
-            src="/profile.jpg"
-            alt="Ilja Herdt"
-            className="w-28 h-28 rounded-2xl object-cover shadow-sm shrink-0"
-          />
+        <div className="flex flex-col-reverse sm:flex-row items-center sm:items-start justify-between gap-8">
           <div className="max-w-2xl">
             <p className="text-brand-600 font-medium mb-3">Hi, I&apos;m Ilja</p>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
@@ -39,6 +34,11 @@ export default function HomePage({ recentPosts }: HomeProps) {
               </Link>
             </div>
           </div>
+          <img
+            src="/profile.jpg"
+            alt="Ilja Herdt"
+            className="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl object-cover shadow-sm shrink-0"
+          />
         </div>
       </section>
 
