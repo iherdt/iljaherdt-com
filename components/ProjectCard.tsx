@@ -9,9 +9,10 @@ interface ProjectCardProps {
   featured?: boolean
   status?: string
   icon?: string
+  iconSrc?: string
 }
 
-export default function ProjectCard({ title, description, tags, href, internal, featured, status, icon }: ProjectCardProps) {
+export default function ProjectCard({ title, description, tags, href, internal, featured, status, icon, iconSrc }: ProjectCardProps) {
   const className = `block rounded-2xl border transition-all duration-200 ${
     featured
       ? 'border-brand-200 bg-gradient-to-br from-brand-50 to-white shadow-sm hover:shadow-md hover:border-brand-300'
@@ -22,7 +23,11 @@ export default function ProjectCard({ title, description, tags, href, internal, 
     <div className="p-6">
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-3">
-          {icon && <span className="text-2xl">{icon}</span>}
+          {iconSrc ? (
+            <img src={iconSrc} alt={title} className="w-10 h-10 rounded-xl" />
+          ) : icon ? (
+            <span className="text-2xl">{icon}</span>
+          ) : null}
           <h3 className={`font-semibold ${featured ? 'text-lg' : 'text-base'} text-gray-900`}>
             {title}
           </h3>
