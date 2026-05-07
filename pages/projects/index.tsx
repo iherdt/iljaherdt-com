@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
-import ProjectCard from '../components/ProjectCard'
+import Layout from '../../components/Layout'
+import ProjectCard from '../../components/ProjectCard'
 
 export default function ProjectsPage() {
   return (
@@ -20,7 +20,8 @@ export default function ProjectsPage() {
             icon="🚆"
             description="Caltrain schedule companion with live train tracking on an interactive map, pinned routes, departure and arrival reminders, commute stats, and service alerts. Built for daily riders who want to know exactly when to leave."
             tags={['Swift', 'SwiftUI', 'MapKit', 'StoreKit 2', 'GTFS']}
-            href="https://apps.apple.com/app/calrun/id6759998408"
+            href="/projects/calrun"
+            internal
             featured
             status="Live"
           />
@@ -29,6 +30,8 @@ export default function ProjectsPage() {
             icon="🏋️"
             description="Workout tracking app focused on progressive overload. Log sets, track personal records, and visualize strength gains over time."
             tags={['Swift', 'SwiftUI', 'CoreData', 'HealthKit']}
+            href="/projects/focusrep"
+            internal
             status="Beta"
           />
         </div>
