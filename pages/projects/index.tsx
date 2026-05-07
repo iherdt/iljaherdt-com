@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         <div className="grid sm:grid-cols-2 gap-5">
           <ProjectCard
             title="CalRun"
-            icon="🚆"
+            iconSrc="/calrun-icon.png"
             description="Caltrain schedule companion with live train tracking on an interactive map, pinned routes, departure and arrival reminders, commute stats, and service alerts. Built for daily riders who want to know exactly when to leave."
             tags={['Swift', 'SwiftUI', 'MapKit', 'StoreKit 2', 'GTFS']}
             href="/projects/calrun"

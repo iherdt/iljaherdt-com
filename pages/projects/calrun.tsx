@@ -39,7 +39,7 @@ export default function CalRunPage() {
         </Link>
 
         <div className="flex items-start gap-5 mb-6">
-          <span className="text-5xl">🚆</span>
+          <img src="/calrun-icon.png" alt="CalRun" className="w-16 h-16 rounded-2xl shadow-sm" />
           <div>
             <div className="flex items-center gap-3 mb-2">
               <h1 className="text-3xl font-bold text-gray-900">CalRun</h1>

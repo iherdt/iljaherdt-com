@@ -49,7 +49,7 @@ export default function HomePage({ recentPosts }: HomeProps) {
 
         <ProjectCard
           title="CalRun"
-          icon="🚆"
+          iconSrc="/calrun-icon.png"
           description="A Caltrain schedule and commute companion for daily riders. Live train tracking on an interactive map, pinned routes with departure and arrival reminders, commute stats, and service alerts. Built with SwiftUI, MapKit, and real-time GTFS data."
           tags={['Swift', 'SwiftUI', 'MapKit', 'StoreKit 2', 'GTFS', 'iOS']}
           href="/projects/calrun"
