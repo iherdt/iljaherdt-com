@@ -4,7 +4,14 @@ export default function AboutPage() {
   return (
     <Layout title="About" description="About Ilja Herdt, software engineer based in the Bay Area.">
       <section className="max-w-3xl mx-auto px-6 pt-16 pb-16">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">About</h1>
+        <div className="flex items-center gap-6 mb-8">
+          <img
+            src="/profile.jpg"
+            alt="Ilja Herdt"
+            className="w-20 h-20 rounded-2xl object-cover shadow-sm"
+          />
+          <h1 className="text-3xl font-bold text-gray-900">About</h1>
+        </div>
 
         <div className="prose prose-gray max-w-none space-y-6 text-gray-600 leading-relaxed">
           <p className="text-lg">
