@@ -43,6 +43,32 @@ export default function AboutPage() {
             or optimizing things that probably don&apos;t need optimizing.
           </p>
 
+          <h2 className="text-xl font-semibold text-gray-900 pt-4">Experience</h2>
+
+          <div className="not-prose space-y-0 relative ml-1">
+            <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gray-100" />
+
+            {[
+              { period: '2023 - Present', role: 'Solutions Engineer', company: 'Airbyte', description: 'Helping teams build data integration pipelines. Connector development, technical enablement, and customer architecture.' },
+              { period: '2025 - Present', role: 'Founder', company: 'Heart Fusion Camp', description: 'Burning Man theme camp building interactive LED art installations powered by custom ESP32 firmware.' },
+              { period: '2026 - Present', role: 'Indie Developer', company: 'CalRun & FocusRep', description: 'Designing and shipping iOS apps. SwiftUI, MapKit, StoreKit 2, real-time transit data.' },
+              { period: '2018 - 2023', role: 'Solutions Engineer', company: 'Xandr (Microsoft)', description: 'Programmatic advertising platform. Built integrations, managed technical partnerships, and designed data pipelines at scale.' },
+              { period: '2015 - 2018', role: 'Technical Account Manager', company: 'AppNexus', description: 'Pre-acquisition. Technical consulting for enterprise ad-tech clients, API integrations, and platform optimization.' },
+            ].map((item, i) => (
+              <div key={i} className="relative pl-7 pb-6 last:pb-0">
+                <div className="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-2 border-gray-200 bg-white z-10" />
+                <p className="text-xs text-gray-400 mb-1">{item.period}</p>
+                <p className="text-sm font-semibold text-gray-900">{item.role}</p>
+                <p className="text-sm text-brand-600 mb-1">{item.company}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-sm text-gray-400 pt-2">
+            Full details on <a href="https://linkedin.com/in/iherdt" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 font-medium">LinkedIn</a>.
+          </p>
+
           <h2 className="text-xl font-semibold text-gray-900 pt-4">Tech I Use</h2>
 
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-4 not-prose">
