@@ -13,24 +13,31 @@ export default function HomePage({ recentPosts }: HomeProps) {
     <Layout>
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 pt-20 pb-16">
-        <div className="max-w-2xl">
-          <p className="text-brand-600 font-medium mb-3">Hi, I&apos;m Ilja</p>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
-            Builder,<br />maker, and commute optimizer.
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            I build tools that solve real problems. From iOS apps that make daily commutes
-            effortless to data integration platforms that connect the world&apos;s systems.
-            Based in the San Francisco Bay Area.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/projects" className="inline-flex items-center px-5 py-2.5 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition">
-              View Projects
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </Link>
-            <Link href="/about" className="inline-flex items-center px-5 py-2.5 border border-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition">
-              About Me
-            </Link>
+        <div className="flex flex-col sm:flex-row items-start gap-8">
+          <img
+            src="/profile.jpg"
+            alt="Ilja Herdt"
+            className="w-28 h-28 rounded-2xl object-cover shadow-sm shrink-0"
+          />
+          <div className="max-w-2xl">
+            <p className="text-brand-600 font-medium mb-3">Hi, I&apos;m Ilja</p>
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
+              Builder,<br />maker, and commute optimizer.
+            </h1>
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              I build tools that solve real problems. From iOS apps that make daily commutes
+              effortless to data integration platforms that connect the world&apos;s systems.
+              Based in the San Francisco Bay Area.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/projects" className="inline-flex items-center px-5 py-2.5 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition">
+                View Projects
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </Link>
+              <Link href="/about" className="inline-flex items-center px-5 py-2.5 border border-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition">
+                About Me
+              </Link>
+            </div>
           </div>
         </div>
       </section>
