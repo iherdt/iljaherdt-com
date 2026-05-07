@@ -5,7 +5,7 @@ excerpt: "Creating an interactive LED labyrinth and cuddle dome for the playa, f
 tags: ["Burning Man", "LED", "Hardware", "Art"]
 ---
 
-In 2023, a few friends and I started [Heart Fusion Camp](https://heartfusioncamp.com/) with a simple idea: build a glowing space where strangers become friends.
+In 2025, a few friends and I started [Heart Fusion Camp](https://heartfusioncamp.com/) with a simple idea: build a glowing space where strangers become friends.
 
 ## The installation
 
