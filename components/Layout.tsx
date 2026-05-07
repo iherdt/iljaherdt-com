@@ -8,7 +8,7 @@ interface LayoutProps {
   description?: string
 }
 
-export default function Layout({ children, title = 'Ilja Herdt', description = 'Software engineer, maker, and commute optimizer.' }: LayoutProps) {
+export default function Layout({ children, title = 'Ilja Herdt', description = 'Builder, maker, and commute optimizer.' }: LayoutProps) {
   const fullTitle = title === 'Ilja Herdt' ? title : `${title} | Ilja Herdt`
 
   return (
