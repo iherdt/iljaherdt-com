@@ -39,7 +39,7 @@ export default function AboutPage() {
             <a href="https://heartfusioncamp.com/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 font-medium">Heart Fusion Camp</a>,
             a Burning Man theme camp centered on interactive LED art installations. We build
             glowing heart labyrinths, cuddle domes, and audio-reactive light sculptures powered
-            by custom ESP32 firmware. When I&apos;m not on the playa, I&apos;m running, lifting,
+            by custom ESP32 firmware. When I&apos;m not on the playa, I&apos;m running, studying,
             or optimizing things that probably don&apos;t need optimizing.
           </p>
 
