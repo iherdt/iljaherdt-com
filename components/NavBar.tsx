@@ -49,7 +49,7 @@ export default function NavBar() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/iljaherdt"
+            href="https://linkedin.com/in/iherdt"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-brand-600 transition"
