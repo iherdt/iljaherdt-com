@@ -1,8 +1,14 @@
 import Link from 'next/link'
+import { GetStaticProps } from 'next'
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
+import { getAllPosts, PostMeta } from '../lib/posts'
 
-export default function HomePage() {
+interface HomeProps {
+  recentPosts: PostMeta[]
+}
+
+export default function HomePage({ recentPosts }: HomeProps) {
   return (
     <Layout>
       {/* Hero */}
@@ -55,6 +61,37 @@ export default function HomePage() {
       {/* Divider */}
       <div className="max-w-5xl mx-auto px-6"><hr className="border-gray-100" /></div>
 
+      {/* Recent Posts */}
+      {recentPosts.length > 0 && (
+        <>
+          <div className="max-w-5xl mx-auto px-6"><hr className="border-gray-100" /></div>
+          <section className="max-w-5xl mx-auto px-6 py-16">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold text-gray-900">Recent Writing</h2>
+              <Link href="/blog" className="text-sm text-brand-600 font-medium hover:text-brand-700 transition">
+                All posts &rarr;
+              </Link>
+            </div>
+            <div className="space-y-1">
+              {recentPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="block group py-4 border-b border-gray-50 last:border-0"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="font-medium text-gray-900 group-hover:text-brand-600 transition">{post.title}</h3>
+                    <time className="text-xs text-gray-400 whitespace-nowrap mt-0.5 shrink-0">
+                      {new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                    </time>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        </>
+      )}
+
       {/* What I Do */}
       <section className="max-w-5xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">What I Work On</h2>
@@ -90,4 +127,9 @@ export default function HomePage() {
       </section>
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const recentPosts = getAllPosts().slice(0, 5)
+  return { props: { recentPosts } }
 }

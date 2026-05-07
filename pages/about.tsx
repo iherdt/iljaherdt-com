@@ -35,9 +35,12 @@ export default function AboutPage() {
           </p>
 
           <p>
-            Outside of code, I&apos;m into LED art projects (Burning Man installations with{' '}
-            <a href="https://github.com/iherdt/jazzlights" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 font-medium">JazzLights</a>),
-            running, and optimizing things that probably don&apos;t need optimizing.
+            Outside of code, I founded{' '}
+            <a href="https://heartfusioncamp.com/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 font-medium">Heart Fusion Camp</a>,
+            a Burning Man theme camp centered on interactive LED art installations. We build
+            glowing heart labyrinths, cuddle domes, and audio-reactive light sculptures powered
+            by custom ESP32 firmware. When I&apos;m not on the playa, I&apos;m running, lifting,
+            or optimizing things that probably don&apos;t need optimizing.
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4">Tech I Use</h2>

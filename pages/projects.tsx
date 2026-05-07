@@ -39,6 +39,15 @@ export default function ProjectsPage() {
         <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Hardware &amp; Creative</h2>
         <div className="grid sm:grid-cols-2 gap-5">
           <ProjectCard
+            title="Heart Fusion Camp"
+            icon=")'("
+            description="Burning Man theme camp I founded. We build interactive LED installations: a glowing Heart Glow Labyrinth, cuddle puddle dome, and audio-reactive light sculptures. All powered by custom ESP32 firmware."
+            tags={['Burning Man', 'LED', 'ESP32', 'Community', 'Art']}
+            href="https://heartfusioncamp.com/"
+            featured
+            status="Active"
+          />
+          <ProjectCard
             title="WLED Spectra"
             icon="💡"
             description="Custom firmware for ESP32-based LED controllers. Audio-reactive lighting effects synced to music for live events and installations."
