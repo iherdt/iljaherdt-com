@@ -16,7 +16,7 @@ export default function HomePage({ recentPosts }: HomeProps) {
         <div className="max-w-2xl">
           <p className="text-brand-600 font-medium mb-3">Hi, I&apos;m Ilja</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
-            Software engineer,<br />maker, and commute optimizer.
+            Builder,<br />maker, and commute optimizer.
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
             I build tools that solve real problems. From iOS apps that make daily commutes
