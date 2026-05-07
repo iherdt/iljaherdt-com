@@ -5,7 +5,7 @@ export default function Footer() {
         <span>&copy; {new Date().getFullYear()} Ilja Herdt</span>
         <div className="flex items-center space-x-6">
           <a href="https://github.com/iherdt" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition">GitHub</a>
-          <a href="https://linkedin.com/in/iljaherdt" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition">LinkedIn</a>
+          <a href="https://linkedin.com/in/iherdt" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition">LinkedIn</a>
           <a href="mailto:i.herdt@gmail.com" className="hover:text-gray-900 transition">Email</a>
         </div>
       </div>
