@@ -72,6 +72,15 @@ export default function ProjectsPage() {
         <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Open Source</h2>
         <div className="grid sm:grid-cols-2 gap-5">
           <ProjectCard
+            title="Lanekeeper"
+            icon="🚦"
+            description="Multi-user AI agent orchestration with per-user isolation and one-shot consent onboarding. A resident orchestrator spawns user-bound child agents on demand or on a schedule, gates every lane behind per-user OAuth, and delivers consent as a single clickable email. Built on Arcade and Claude."
+            tags={['Python', 'Claude', 'Arcade', 'OAuth', 'Agents']}
+            href="https://github.com/iherdt/lanekeeper"
+            featured
+            status="Active"
+          />
+          <ProjectCard
             title="Airbyte Contributions"
             icon="🔌"
             description="Connector development and data integration tooling for the Airbyte open source ecosystem."
