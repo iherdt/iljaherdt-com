@@ -74,7 +74,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="Lanekeeper"
             icon="🚦"
-            description="Multi-user AI agent orchestration with per-user isolation and one-shot consent onboarding. A resident orchestrator spawns user-bound child agents on demand or on a schedule, gates every lane behind per-user OAuth, and delivers consent as a single clickable email. Built on Arcade and Claude."
+            description="Multi-user AI agent orchestration with per-user isolation, one-shot consent onboarding, and capped per-user memory with compaction. A resident orchestrator spawns user-bound child agents on demand or on a schedule, gating every lane behind per-user OAuth. Built on Arcade and Claude."
             tags={['Python', 'Claude', 'Arcade', 'OAuth', 'Agents']}
             href="https://github.com/iherdt/lanekeeper"
             featured
